@@ -18,15 +18,17 @@ public class GPS {
     private final String agentId;
     private final String latitude;
     private final String longitude;
+    private final String timestamp;
 
     /* -------------------------------------------- */
     /* Methods ------------------------------------ */
     /* -------------------------------------------- */
     @Builder
-    public GPS(String tripId, String agentId, String latitude, String longitude) {
+    public GPS(String tripId, String agentId, String latitude, String longitude, String timestamp) {
         this.tripId = tripId;
         this.agentId = agentId;
         this.latitude = latitude;
         this.longitude = longitude;
+        this.timestamp = timestamp;
     }
 }
