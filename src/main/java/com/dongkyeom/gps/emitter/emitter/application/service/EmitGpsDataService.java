@@ -102,7 +102,7 @@ public class EmitGpsDataService implements EmitGpsDataUseCase {
     }
 
     private void sendGps(GPS gps, String destination) {
-        String url = "http://" + destination + "/gps";
+        String url = "http://" + destination + "/api/v1/gps";
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
 
